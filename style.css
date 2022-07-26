@@ -37,6 +37,7 @@ table {
 }
 
 input {
+  background-color: #ffffff44;
   outline: none;
   border: 0;
   width: 5rem;
@@ -100,5 +101,14 @@ input {
   .botones {
     width: 50%;
     margin: 1rem auto;
+  }
+
+  .botones .btnPuntos:hover {
+    background-color: rgb(123, 255, 0);
+  }
+  
+  .botones .btnBorrar:hover {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
   }
 }
