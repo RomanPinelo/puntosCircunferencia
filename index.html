@@ -32,7 +32,7 @@
       C(h, k): (<input type="number" class="coordenadaH" id="coordenadaH">, <input type="number" class="coordenadaK" id="coordenadaK">)
     </p>
 
-    <p>Introduce el valor del radio: <input type="number" class="radio" id="radio"></p>
+    <p>Introduce el valor del radio elevado al cuadrado: <input type="number" class="radio" id="radio"></p>
 
     <div class="botones">
       <button class="btnPuntos" id="btnPuntos">Obtener puntos</button>
@@ -41,8 +41,10 @@
 
     <p>
       Ecuación canónica: 
-      <span id="ecuacionCanonica">(x + 6)<sup>2</sup> + (y - 4)<sup>2</sup> = 25</span>
+      <span id="ecuacionCanonica"></span>
     </p>
+
+    <p id="buscando"></p>
 
     <p>Resultados:</p>
 
@@ -51,17 +53,9 @@
         <th>x</th>
         <th>y</th>
       </tr>
-      <tr>
-        <td>0</td>
-        <td>-3</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>-3</td>
-      </tr>
     </table>
 
-    <p id="noMasResultados">No se encontraron mas resultados</p>
+    <p id="noMasResultados"></p>
 
     <script src="./calculo.js"></script>
 
