@@ -53,6 +53,29 @@ input {
   margin-right: 0.2rem;
 }
 
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.botones button {
+  padding: 0.25rem 0.75rem;
+  outline: none;
+  border: 0;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.botones .btnPuntos {
+  background-color: rgba(123, 255, 0, 0.671);
+}
+
+.botones .btnBorrar {
+  background-color: rgba(255, 0, 0, 0.671);
+  color: #fff;
+}
+
 
 
 /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
@@ -72,5 +95,10 @@ input {
 @media screen and (min-width: 1000px) {
   table {
     width: 30%;
+  }
+
+  .botones {
+    width: 50%;
+    margin: 1rem auto;
   }
 }
