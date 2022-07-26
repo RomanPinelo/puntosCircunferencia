@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Puntos circunferencia</title>
+  </head>
+
+  <body>
+
+    <h1>Puntos dentro de la circunferencia</h1>
+
+    <p>
+      El objetivo de esta práctica es obtener puntos que están sobre la circunferencia, a partir
+      de las coordenadas del centro y el valor del radio. 
+      <br>
+      Estos datos serán introducidos por el usuario y se generará una tabla con los posibles 
+      resultados y notificará cuando no haya más.
+      <br>
+      Además de practicar la programación con JavaScript.
+    </p>
+
+    <p>
+      Introduce las coordenadas del centro C(h, k): (<input type="number" class="coordenada" id="coordenadaH">, <input type="number" class="coordenada" id="coordenadaK">)
+    </p>
+
+    <p>Introduce el valor del radio: <input type="number" class="radio" id="radio"></p>
+
+    <p id="ecuacionCanonica"></p>
+
+    <p>Resultados:</p>
+
+    <table id="tablaPuntos">
+      <tr>
+        <th>x</th>
+        <th>y</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>-3</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>-3</td>
+      </tr>
+    </table>
+
+    <p id="noMasResultados">No se encontraron mas resultados</p>
+
+    <script src="./calculo.js"></script>
+
+  </body>
+
+  </html>
