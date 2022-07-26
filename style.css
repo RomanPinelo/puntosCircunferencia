@@ -78,6 +78,43 @@ input {
   color: #fff;
 }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s;
+  background-color: #ffffffbb;
+  backdrop-filter: blur(5px);
+  width: 90%;
+  height: 27.5rem;
+  color: #000;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal .cerrar {
+  background-color: #ffffffbb;
+  outline: none;
+  border: 0;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal .mensajeModal {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
 
 
 /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
@@ -85,6 +122,10 @@ input {
 *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
 @media screen and (min-width: 768px) {
   table {
+    width: 50%;
+  }
+
+  .modal {
     width: 50%;
   }
 }
@@ -96,6 +137,10 @@ input {
 *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
 @media screen and (min-width: 1000px) {
   table {
+    width: 30%;
+  }
+
+  .modal {
     width: 30%;
   }
 
