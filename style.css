@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Mobile View
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+p {
+  width: 90%;
+  margin: 0.5rem auto;
+}
+
+/*Poner los bordes de la tabla*/
+table, tr, td, th {
+  border-collapse: collapse;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+table {
+  width: 70%;
+  margin: 1rem auto;
+}
+
+input {
+  outline: none;
+  border: 0;
+  width: 5rem;
+  height: 1rem;
+  text-align: center;
+}
+
+.coordenadaH {
+  margin-left: 0.25rem;
+  margin-right: 0.2rem;
+}
+
+.coordenadaK {
+  margin-right: 0.2rem;
+}
+
+
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  IPad View
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+@media screen and (min-width: 768px) {
+  table {
+    width: 50%;
+  }
+}
+
+
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Desktop View
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+@media screen and (min-width: 1000px) {
+  table {
+    width: 30%;
+  }
+}
